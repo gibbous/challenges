@@ -1,0 +1,40 @@
+1. SELECT * FROM users; 
+
+2. SELECT * FROM users WHERE id = 2;
+
+3. Meals table
+
+  meal_id meal_name owner(references id from user table)
+
+4.
+
+  CREATE TABLE meal (
+    meal_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    meal_name VARCHAR (100) NOT NULL,
+    owner SMALLINT UNSIGNED NOT NULL REFERENCES users(id),
+    PRIMARY KEY (meal_id)
+);
+
+5. 
+INSERT INTO meal VALUES (NULL, 'tacos') WHERE owner = 1;
+
+6.
+UPDATE users SET username = 'myfavbandisglassanimals.
+' where id = '3';
+
+7. 
+DELETE FROM users WHERE id = 4 LIMIT 1;
+
+8. 
+SELECT *
+FROM user
+INNER JOIN meals
+ON user.id = meals.owner;
+
+9. file attached (boxModel.png)
+
+10. Time Expired
+
+11. Sphen Zhen
+
+12. Something MEAN ;)
